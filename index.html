@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<title>SoftAI - Чат и Примерен Сайт</title>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #e0f7ff;
+    }
+    header {
+      background-color: #0a0f1f;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid #66ccff;
+    }
+    h1 {
+      margin: 0;
+      color: #66ccff;
+    }
+    .chat-box {
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #66ccff;
+    }
+    .message {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .ai {
+      color: #66ccff;
+    }
+    .user {
+      color: #ffffff;
+      text-align: right;
+    }
+    .button-wrapper {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .button {
+      background-color: #66ccff;
+      color: black;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .preview {
+      display: none;
+      margin: 40px auto;
+      max-width: 1000px;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #333;
+    }
+    .site-frame {
+      width: 100%;
+      height: 700px;
+      border: none;
+    }
+    footer {
+      background-color: #0a0f1f;
+      color: #66ccff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+<div style="text-align: center; margin-top: 1rem;">
+<img alt="SoftAI Logo" src="IMG_6182.jpeg" style="max-width: 250px; height: auto;"/>
+</div>
+<div style="text-align: center; margin-top: 1rem;">
+
+</div>
+<header>
+<h1>SoftAI</h1>
+<p>Чат с клиент и примерен сайт за Кафе "Арома"</p>
+</header>
+<div class="chat-box">
+<div class="message ai"><strong>SoftAI:</strong> Здравей! Как се казва твоят бизнес?</div>
+<div class="message user"><strong>Клиент:</strong> Кафе "Арома"</div>
+<div class="message ai"><strong>SoftAI:</strong> Какви услуги/продукти предлагаш?</div>
+<div class="message user"><strong>Клиент:</strong> Прясно кафе, домашни десерти и топли напитки</div>
+<div class="message ai"><strong>SoftAI:</strong> Какви цветове предпочиташ?</div>
+<div class="message user"><strong>Клиент:</strong> Кафяво и кремаво</div>
+<div class="message ai">
+<strong>SoftAI:</strong> Супер! Готов съм да ти покажа сайта – натисни бутона по-долу:
+    </div>
+</div>
+<div class="button-wrapper">
+<button class="button" onclick="showSite()">Виж готовия сайт</button>
+</div>
+<footer> </footer>
+</body></html>
+<footer>
+    © 2025 SoftAI | Създадено с изкуствен интелект
+  </footer>
+<script>
+    function showSite() {
+  document.getElementById('preview').style.display = 'block';
+  document.getElementById('checkoutInfo').style.display = 'block';
+  document.getElementById('checkoutInfo').style.display = 'block';
+  document.getElementById('buyButtonContainer').style.display = 'block';
+      document.getElementById("preview").style.display = "block";
+      document.querySelector(".button-wrapper").style.display = "none";
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    }
+  </script>
+<div id="preview" style="display: none;">
+<iframe class="site-frame" src="data:text/html;base64,PCFET0NUWVBFIGh0bWw+PGh0bWwgbGFuZz0iYmciPjxoZWFkPiAgPG1ldGEgY2hhcnNldD0iVVRGLTgiPiAgPHRpdGxlPtCa0LDRhNC1INCQ0YDQvtC80LA8L3RpdGxlPiAgPHN0eWxlPiAgICBib2R5IHsgICAgICBtYXJnaW46IDA7ICAgICAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSScsIHNhbnMtc2VyaWY7ICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2ZkZjZlZjsgICAgICBjb2xvcjogIzNlMmMyMzsgICAgfSAgICBoZWFkZXIgeyAgICAgIGJhY2tncm91bmQtY29sb3I6ICM2YjRmM2I7ICAgICAgY29sb3I6IHdoaXRlOyAgICAgIHBhZGRpbmc6IDMwcHg7ICAgICAgdGV4dC1hbGlnbjogY2VudGVyOyAgICB9ICAgIG5hdiB7ICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2E2N2M1MjsgICAgICBwYWRkaW5nOiAxMHB4OyAgICAgIHRleHQtYWxpZ246IGNlbnRlcjsgICAgfSAgICBuYXYgYSB7ICAgICAgbWFyZ2luOiAwIDE1cHg7ICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lOyAgICAgIGNvbG9yOiB3aGl0ZTsgICAgICBmb250LXdlaWdodDogYm9sZDsgICAgfSAgICAuaGVybyB7ICAgICAgdGV4dC1hbGlnbjogY2VudGVyOyAgICAgIHBhZGRpbmc6IDQwcHg7ICAgIH0gICAgLmhlcm8gaW1nIHsgICAgICBtYXgtd2lkdGg6IDEwMCU7ICAgICAgaGVpZ2h0OiBhdXRvOyAgICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7ICAgIH0gICAgLnNlY3Rpb24geyAgICAgIHBhZGRpbmc6IDMwcHg7ICAgICAgbWF4LXdpZHRoOiA4MDBweDsgICAgICBtYXJnaW46IGF1dG87ICAgIH0gICAgLm1lbnUtaXRlbSB7ICAgICAgbWFyZ2luLWJvdHRvbTogMTVweDsgICAgfSAgICBmb290ZXIgeyAgICAgIGJhY2tncm91bmQtY29sb3I6ICM2YjRmM2I7ICAgICAgY29sb3I6IHdoaXRlOyAgICAgIHRleHQtYWxpZ246IGNlbnRlcjsgICAgICBwYWRkaW5nOiAxNXB4OyAgICAgIG1hcmdpbi10b3A6IDQwcHg7ICAgIH0gIDwvc3R5bGU+PC9oZWFkPjxib2R5PiAgPGhlYWRlcj4gICAgPGgxPtCa0LDRhNC1ICLQkNGA0L7QvNCwIjwvaDE+ICAgIDxwPtCj0Y7Rgiwg0LDRgNC+0LzQsNGCINC4INCy0LrRg9GBINCy0YrQsiDQstGB0Y/QutCwINGH0LDRiNCwPC9wPiAgPC9oZWFkZXI+ICA8bmF2PiAgICA8YSBocmVmPSIjbWVudSI+0JzQtdC90Y48L2E+ICAgIDxhIGhyZWY9IiNjb250YWN0Ij7QmtC+0L3RgtCw0LrRgtC4PC9hPiAgPC9uYXY+ICA8ZGl2IGNsYXNzPSJoZXJvIj4gICAgPGltZyBzcmM9Imh0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTA5MDQyMjM5ODYwLWY1NTBjZTcxMGI5MyIgYWx0PSLQmtCw0YTQtdC90LUiPiAgPC9kaXY+ICA8ZGl2IGNsYXNzPSJzZWN0aW9uIiBpZD0ibWVudSI+ICAgIDxoMj7QnNC10L3RjjwvaDI+ICAgIDxkaXYgY2xhc3M9Im1lbnUtaXRlbSI+PHN0cm9uZz7QldGB0L/RgNC10YHQvjwvc3Ryb25nPiDigJMgMi41MCDQu9CyPC9kaXY+ICAgIDxkaXYgY2xhc3M9Im1lbnUtaXRlbSI+PHN0cm9uZz7QmtCw0L/Rg9GH0LjQvdC+PC9zdHJvbmc+IOKAkyAzLjAwINC70LI8L2Rpdj4gICAgPGRpdiBjbGFzcz0ibWVudS1pdGVtIj48c3Ryb25nPtCU0L7QvNCw0YjQvdCwINGC0L7RgNGC0LA8L3N0cm9uZz4g4oCTIDQuMDAg0LvQsjwvZGl2PiAgICA8ZGl2IGNsYXNzPSJtZW51LWl0ZW0iPjxzdHJvbmc+0JPQvtGA0LXRiSDRiNC+0LrQvtC70LDQtDwvc3Ryb25nPiDigJMgMy41MCDQu9CyPC9kaXY+ICA8L2Rpdj4gIDxkaXYgY2xhc3M9InNlY3Rpb24iIGlkPSJjb250YWN0Ij4gICAgPGgyPtCa0L7QvdGC0LDQutGC0Lg8L2gyPiAgICA8cD7wn5ONINGD0LsuICLQktC60YPRgdC90LAiIDcsINCh0L7RhNC40Y88L3A+ICAgIDxwPvCfk54gMDg4OCAxMjMgNDU2PC9wPiAgICA8cD7wn5OnIGFyb21hQGNhZmUuYmc8L3A+ICA8L2Rpdj4gIDxmb290ZXI+ICAgIMKpIDIwMjUg0JrQsNGE0LUgItCQ0YDQvtC80LAiIOKAkyDQktGB0LjRh9C60Lgg0L/RgNCw0LLQsCDQt9Cw0L/QsNC30LXQvdC4ICA8L2Zvb3Rlcj48L2JvZHk+PC9odG1sPg==" style="width: 100%; height: 1000px; border: none; margin-top: 2rem;"></iframe>
+</div><div id="checkoutInfo" style="
+    display: none;
+    margin-top: 3rem;
+    background: #f5f5f5;
+    color: #111;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    ">
+<h2>Завърши поръчката</h2>
+<p><strong>Услуга:</strong> SoftAI – AI сайт генератор</p>
+<p><strong>План:</strong> Годишен абонамент</p>
+<p><strong>Цена:</strong> 99,99 лв.</p>
+<button onclick="document.getElementById('checkoutMessage').innerText = '✅ Благодарим за покупката!'" style="padding: 1rem 2rem; font-size: 1.4rem; background-color: #d35400; color: white; border: none; border-radius: 10px; cursor: pointer;">Плати</button>
+<p id="checkoutMessage" style="margin-top: 1rem; color: #238636;"></p>
+</div>
+<div id="buyButtonContainer" style="display: none; text-align: center; margin-top: 2rem;">
+<button 99,99="" <="" button="" onclick="document.getElementById('checkoutInfo').style.display = 'block';" година="" за="" купи="" лв.="">
+</button></div>
+<div id="checkoutInfo" style="display: none; margin-top: 2rem; background: #f5f5f5; color: #111; padding: 2rem; border-radius: 12px; max-width: 500px; margin-left: auto; margin-right: auto; text-align: center; font-family: Arial, sans-serif;">
+<h2>Завърши поръчката</h2>
+<p><strong>Услуга:</strong> SoftAI – AI сайт генератор</p>
+<p><strong>План:</strong> Годишен абонамент</p>
+<p><strong>Цена:</strong> 99,99 лв.</p>
+<button onclick="document.getElementById('checkoutMessage').innerText = '✅ Благодарим за покупката!'" style="margin-top: 1rem; padding: 0.8rem 1.5rem; font-size: 1rem; background-color: #238636; color: white; border: none; border-radius: 6px; cursor: pointer;">Плати</button>
+<p id="checkoutMessage" style="margin-top: 1rem; color: #238636;"></p>
+</div>
